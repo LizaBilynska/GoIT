@@ -1,9 +1,45 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #212121;
+:root {
+    --primary-text-colour: #212121;
+    --accent-text-colour: #2196F3;
+    --background-colour: #FFFFFF;
 }
+body {
+    background-color: var(--background-colour);
+    color: var(--primary-text-colour);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
 a {
     text-decoration: none;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-colour);
+}
+
+.logo-two {
+    color: #000000;
+}
+
+.des-for-business {
+    background-color: #2F303A;
+}
+
+
+.order {
+    cursor: pointer;
+    background-color: var(--accent-text-colour);
+    color: var(--background-colour);
+
 }
 .decidions {
     font-weight: 900;
@@ -12,51 +48,62 @@ a {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--background-colour);
     background-color: #2F303A;
 }
-.header-list {
+ul {
     list-style: none;
 }
+.header-list:hover, 
+.header-list:focus,
+.footer-list:hover
+.footer-list:focus {
+    color: var(--accent-text-colour);
+}
+
 .header-buttons {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: black;
+    color: var(--primary-text-colour);
+
+}
+.header-buttons:hover, 
+.header-buttons:focus {
+    color: var(--accent-text-colour);
 }
 
-.order {
-    cursor: pointer;
-}
 
-:link:hover {
-    color: #2196F3;
-}
-
-:link:focus {
-    color: #2196F3;
-}
-
-.phone {
+.phone, .email {
     color: #757575;
 }
 
-.email {
-    color: #757575;
+.phone:focus,
+.phone:hover{
+    color: var(--accent-text-colour);
 }
-p {
+
+.email:focus, 
+.email:hover {
+    color: var(--accent-text-colour);
+}
+.p-text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #757575;
 }
 
-h2 {
+.our-team, .what-we-do, .nashi-osobennosti {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.section-of-team {
+    background-color: #F5F4FA;
 }
 
 .name-surname {
@@ -75,10 +122,34 @@ h2 {
     text-transform: uppercase;
 }
 
+.footer-list {
+    font-style: normal;
+}
+.section-footer {
+    background-color: #2F303A;
+}
 .where {
     font-size: 14px;
     line-height: 1,7;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--background-colour);
     background-color: #2F303A;
+}
+
+.where:hover, .where:focus {
+    color: var (--accent-text-colour);
+}
+
+.buttons-ptf:hover,
+.buttons-ptf:focus {
+    background-color: var (--accent-text-colour);
+    color: var(--background-colour);
+}
+
+.buttons-ptf {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
