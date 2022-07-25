@@ -2,6 +2,10 @@
     --primary-text-colour: #212121;
     --accent-text-colour: #2196F3;
     --background-colour: #FFFFFF;
+    --black-colour: #000;
+    --grey-colour: #2F303A;
+    --light-grey-colour: #757575;
+    --for-one-white: #F5F4FA;
 }
 body {
     background-color: var(--background-colour);
@@ -18,24 +22,31 @@ a {
 }
 
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-text-colour);
 }
 
 .logo-two {
-    color: #000000;
+    color: var(--black-colour);
 }
 
+.logo-three {
+    color: var(--background-colour);
+}
 .des-for-business {
-    background-color: #2F303A;
+    background-color: var(--grey-colour);
 }
 
 
 .order {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
     cursor: pointer;
     background-color: var(--accent-text-colour);
     color: var(--background-colour);
@@ -49,7 +60,7 @@ a {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--background-colour);
-    background-color: #2F303A;
+    background-color: var(--grey-colour);
 }
 ul {
     list-style: none;
@@ -62,6 +73,7 @@ ul {
 }
 
 .header-buttons {
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -75,7 +87,8 @@ ul {
 
 
 .phone, .email {
-    color: #757575;
+    color: var(--light-grey-colour);
+    font-weight: 500;
 }
 
 .phone:focus,
@@ -88,10 +101,11 @@ ul {
     color: var(--accent-text-colour);
 }
 .p-text {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--light-grey-colour);
 }
 
 .our-team, .what-we-do, .nashi-osobennosti {
@@ -102,8 +116,21 @@ ul {
     letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .section-of-team {
-    background-color: #F5F4FA;
+    background-color: var(--for-one-white);
 }
 
 .name-surname {
@@ -112,6 +139,10 @@ ul {
     line-height: 1.19;
     letter-spacing: 0.03em;
 
+}
+
+.team-item {
+    background-color: var(--background-colour);
 }
 
 .our-sp {
@@ -126,14 +157,14 @@ ul {
     font-style: normal;
 }
 .section-footer {
-    background-color: #2F303A;
+    background-color: var(--grey-colour);
 }
 .where {
     font-size: 14px;
-    line-height: 1,7;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--background-colour);
-    background-color: #2F303A;
+    background-color: var(--grey-colour);
 }
 
 .where:hover, .where:focus {
