@@ -11,7 +11,6 @@ body {
     background-color: var(--background-colour);
     color: var(--primary-text-colour);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -26,7 +25,6 @@ a {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--accent-text-colour);
 }
 
@@ -46,12 +44,19 @@ a {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.875;
-    letter-spacing: 0.03em;
     cursor: pointer;
     background-color: var(--accent-text-colour);
     color: var(--background-colour);
 
 }
+
+.order:hover, 
+.order:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
 .decidions {
     font-weight: 900;
     font-size: 44px;
@@ -104,7 +109,6 @@ ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
     color: var(--light-grey-colour);
 }
 
@@ -113,7 +117,6 @@ ul {
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -137,7 +140,6 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 
 }
 
@@ -149,7 +151,6 @@ ul {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
@@ -162,7 +163,6 @@ ul {
 .where {
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
     color: var(--background-colour);
     background-color: var(--grey-colour);
 }
@@ -171,16 +171,23 @@ ul {
     color: var (--accent-text-colour);
 }
 
-.buttons-ptf:hover,
-.buttons-ptf:focus {
-    background-color: var (--accent-text-colour);
-    color: var(--background-colour);
-}
-
 .buttons-ptf {
     cursor: pointer;
     font-size: 16px;
     line-height: 1.6;
+    font-weight: 500;
     text-align: center;
-    letter-spacing: 0.03em;
+    font-family: inherit;
+    background-color: var(--for-one-white);
+}
+
+.buttons-ptf:hover,
+.buttons-ptf:focus {
+    background-color: var(--accent-text-colour);
+    color: var(--background-colour);
+
+}
+
+.colour-type-of-work {
+    column-rule-color: var(--light-grey-colour);
 }
