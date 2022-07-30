@@ -6,6 +6,8 @@
     --grey-colour: #2F303A;
     --light-grey-colour: #757575;
     --for-one-white: #F5F4FA;
+    --smth-grey: #EEEEEE;
+    --for-header: #ECECEC;
 }
 body {
     background-color: var(--background-colour);
@@ -19,7 +21,9 @@ body {
 a {
     text-decoration: none;
 }
-
+.header-redact {
+    border: 1px solid var(--for-header);
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -35,19 +39,24 @@ a {
 .logo-three {
     color: var(--background-colour);
 }
-.des-for-business {
+.hero {
     background-color: var(--grey-colour);
+    text-align: center;
+    padding-bottom: 200px;
 }
 
 
 .order {
+    display: inline-block;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.875;
     cursor: pointer;
     background-color: var(--accent-text-colour);
     color: var(--background-colour);
-
+    border: 1px transparent;
+    padding: 10px 32px;
+    min-width: 216px;
 }
 
 .order:hover, 
@@ -61,19 +70,64 @@ a {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;   
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--background-colour);
     background-color: var(--grey-colour);
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 200px;
 }
+
 ul {
     list-style: none;
 }
+
+
+.header-list {
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    display: flex;
+}
+
+.header-list-two {
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    display: flex;
+}
+
+.header-list .item {
+    margin-right: 50px;
+}
+
+.header-list .item:last-child {
+    margin-right: 0;
+}
+
+.header-list .phone-contacts {
+    margin-right: 0;
+}
+
 .header-list:hover, 
 .header-list:focus,
 .footer-list:hover
 .footer-list:focus {
+    color: var(--accent-text-colour);
+}
+
+
+.header-list-two .item {
+    margin-right: 50px;
+}
+
+.header-list-two:hover, 
+.header-list-two:focus {
     color: var(--accent-text-colour);
 }
 
@@ -83,6 +137,8 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-colour);
+    padding-top: 32px;
+    padding-bottom: 32px;
 
 }
 .header-buttons:hover, 
@@ -110,13 +166,50 @@ ul {
     font-size: 14px;
     line-height: 1.7;
     color: var(--light-grey-colour);
+    text-align: center;
 }
 
+.our-works-list {
+    margin-bottom: 94px;
+}
 .our-team, .what-we-do, .nashi-osobennosti {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+.section-what-we-do {
+    margin-bottom: 94px;
+}
+
+.ot-list {
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.ot-list .team-item {
+    margin-right: 30px;
+}
+
+
+.team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.wwd-list {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.wwd-list .photoes {
+    margin-right: 30px;
+}
+
+.wwd-list .photoes:last-child {
+    margin-right: 0px;
 }
 
 .visually-hidden {
@@ -132,6 +225,11 @@ ul {
     margin: -1px;
 }
 
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
 .section-of-team {
     background-color: var(--for-one-white);
 }
@@ -140,18 +238,25 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-
+    text-align: center;
 }
 
 .team-item {
     background-color: var(--background-colour);
 }
 
+.na-os-list {
+    display: flex;
+    padding-top: 94px;
+    margin-top: 0;
+}
 .our-sp {
+    margin-top: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .footer-list {
@@ -159,6 +264,8 @@ ul {
 }
 .section-footer {
     background-color: var(--grey-colour);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .where {
     font-size: 14px;
@@ -168,10 +275,21 @@ ul {
 }
 
 .where:hover, .where:focus {
-    color: var (--accent-text-colour);
+    color: var(--accent-text-colour);
 }
 
+.list-ptf {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.list-ptf button {
+    margin-right: 8px;
+}
 .buttons-ptf {
+    display: inline-block;
     cursor: pointer;
     font-size: 16px;
     line-height: 1.6;
@@ -179,12 +297,28 @@ ul {
     text-align: center;
     font-family: inherit;
     background-color: var(--for-one-white);
+    border: 1px transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
 }
 
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.works-list .works-list-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--smth-grey);
+}
 .buttons-ptf:hover,
 .buttons-ptf:focus {
     background-color: var(--accent-text-colour);
     color: var(--background-colour);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
 
 }
 
