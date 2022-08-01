@@ -14,7 +14,7 @@
 <body>
     <header class="header-redact">
         <div class="container">
-            <nav><a href="./index.html" class="logo">Web<span class="logo-two">Studio</span></a>
+            <nav class="nav-redact"><a href="./index.html" class="logo">Web<span class="logo-two">Studio</span></a>
                 <ul class="header-list">
                     <li class="item"><a href="./index.html" class="header-buttons">Студия</a></li>
                     <li class="item"><a href="./portfolio.html" class="header-buttons">Портфолио</a></li>
@@ -30,22 +30,24 @@
     
     <main>
         <section class="hero">
-            <h1 class="decidions">Эффективные решения <br>для вашего бизнеса</h1>
-            <button type="button" class="order">Заказать услугу</button>
+            <div class="container">
+                <h1 class="decidions">Эффективные решения <br>для вашего бизнеса</h1>
+                <button type="button" class="order">Заказать услугу</button>
+            </div>
         </section>
         <section class="section-osobennosti">
             <div class="container">
                 <h2 class="nashi-osobennosti visually-hidden">Наши особенности</h2>
                 <ul class="na-os-list">
-                    <li>
+                    <li class="li-na-os-list">
                         <h3 class="our-sp">Внимание к деталям</h3>
                         <p class="p-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="li-na-os-list">
                         <h3 class="our-sp">Пунктуальность</h3>
                         <p class="p-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="li-na-os-list">
                         <h3 class="our-sp">Планирование</h3>
                         <p class="p-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
@@ -76,26 +78,34 @@
             <ul class="ot-list">
                 <li class="team-item">
                     <img src="./images/img2.jpg" alt="Улыбающийся мужчина в очках с бородой" width="270" height="260">
-                    <h3 class="name-surname">Игорь Демьяненко</h3>
-                    <p class="p-text">Product Designer</p>
+                    <div class="name-role">
+                        <h3 class="name-surname">Игорь Демьяненко</h3>
+                        <p class="p-textns">Product Designer</p>
+                    </div>
                 </li>
 
                 <li class="team-item">
                     <img src="./images/img3.jpg" alt="Улыбающаяся женщина в очках" width="270" height="260">
-                    <h3 class="name-surname">Ольга Репина</h3>
-                    <p class="p-text">Frontend Developer</p>
+                    <div class="name-role">
+                        <h3 class="name-surname">Ольга Репина</h3>
+                        <p class="p-textns">Frontend Developer</p>
+                    </div>
                 </li>
 
                 <li class="team-item">
                     <img src="./images/img4.jpg" alt="Улыбающийся мужчина с маленькой бородой" width="270" height="260">
-                    <h3 class="name-surname">Николай Тарасов</h3>
-                    <p class="p-text">Marketing</p>
+                    <div class="name-role">
+                        <h3 class="name-surname">Николай Тарасов</h3>
+                        <p class="p-textns">Marketing</p>
+                    </div>
                 </li>
                 
                 <li class="team-item">
                     <img src="./images/img5.jpg" alt="Легко улыбающийся мужчина в очках с бородой" width="270" height="260">
-                    <h3 class="name-surname">Михаил Ермаков</h3>
-                    <p class="p-text">UI Designer</p>
+                    <div class="name-role">
+                        <h3 class="name-surname">Михаил Ермаков</h3>
+                        <p class="p-textns">UI Designer</p>
+                    </div>
                 </li>
             </ul>
             </div>

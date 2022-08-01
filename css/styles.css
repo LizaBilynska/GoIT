@@ -21,8 +21,15 @@ body {
 a {
     text-decoration: none;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .header-redact {
-    border: 1px solid var(--for-header);
+    border-bottom: 1px solid var(--for-header);
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -30,19 +37,28 @@ a {
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-text-colour);
+    display: block;
+    display: flex;
+
 }
 
 .logo-two {
     color: var(--black-colour);
+    margin-right: 93px;
+    display: flex;
+    
 }
 
 .logo-three {
     color: var(--background-colour);
+    margin-bottom: 20;
 }
+
 .hero {
     background-color: var(--grey-colour);
     text-align: center;
     padding-bottom: 200px;
+    padding-top: 200px;
 }
 
 
@@ -57,13 +73,14 @@ a {
     border: 1px transparent;
     padding: 10px 32px;
     min-width: 216px;
+    border-radius: 4px;
 }
 
 .order:hover, 
 .order:focus {
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+
 }
 
 .decidions {
@@ -76,7 +93,8 @@ a {
     background-color: var(--grey-colour);
     margin-top: 0px;
     margin-bottom: 30px;
-    padding-top: 200px;
+
+
 }
 
 ul {
@@ -87,19 +105,17 @@ ul {
 .header-list {
     margin: 0;
     padding: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
     display: block;
     display: flex;
+    align-items: center;
 }
 
 .header-list-two {
     margin: 0;
     padding: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
     display: block;
     display: flex;
+    align-items: center;
 }
 
 .header-list .item {
@@ -139,6 +155,7 @@ ul {
     color: var(--primary-text-colour);
     padding-top: 32px;
     padding-bottom: 32px;
+    display: inline-block;
 
 }
 .header-buttons:hover, 
@@ -150,6 +167,7 @@ ul {
 .phone, .email {
     color: var(--light-grey-colour);
     font-weight: 500;
+    display: inline-block;
 }
 
 .phone:focus,
@@ -161,6 +179,7 @@ ul {
 .email:hover {
     color: var(--accent-text-colour);
 }
+
 .p-text {
     font-weight: 400;
     font-size: 14px;
@@ -169,8 +188,22 @@ ul {
     text-align: center;
 }
 
+.p-textns {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--light-grey-colour);
+    text-align: center; 
+    margin-bottom: 0;
+}
+
+.section-osobennosti {
+    padding-top: 94px;
+}
+
 .our-works-list {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 100px;
 }
 .our-team, .what-we-do, .nashi-osobennosti {
     font-weight: 700;
@@ -179,15 +212,15 @@ ul {
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
-    padding-top: 94px;
 }
 .section-what-we-do {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
+
 }
 
 .ot-list {
     display: flex;
-    padding-bottom: 94px;
 }
 
 .ot-list .team-item {
@@ -202,6 +235,8 @@ ul {
 .wwd-list {
     display: flex;
     margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
 }
 
 .wwd-list .photoes {
@@ -226,12 +261,36 @@ ul {
 }
 
 .container {
-    width: 1400px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
+}
+
+.nav-redact {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-redact .container {
+    display: flex;
+    align-items: center;
 }
 
 .section-of-team {
     background-color: var(--for-one-white);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.name-role {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
 .name-surname {
@@ -239,6 +298,7 @@ ul {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 0;
 }
 
 .team-item {
@@ -247,21 +307,32 @@ ul {
 
 .na-os-list {
     display: flex;
-    padding-top: 94px;
-    margin-top: 0;
+    padding-left: 0px;
 }
+
+.li-na-os-list {
+    margin-right: 30px;
+}
+
 .our-sp {
     margin-top: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .footer-list {
     font-style: normal;
+    margin: 0;
+    padding: 0;
+
 }
+
+.footer-list .where .email {
+    margin-bottom: 9px;
+}
+
 .section-footer {
     background-color: var(--grey-colour);
     padding-top: 60px;
@@ -280,13 +351,17 @@ ul {
 
 .list-ptf {
     display: flex;
-    margin-top: 100px;
     margin-bottom: 50px;
+    padding-left: 0;
     justify-content: center;
 }
 
-.list-ptf button {
+.list-ptf .li-list-ptf {
     margin-right: 8px;
+}
+
+.list-ptf :last-child {
+    margin-right: 0;
 }
 .buttons-ptf {
     display: inline-block;
@@ -307,6 +382,10 @@ ul {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-right: -30px;
+    margin-bottom: -30px;
 }
 
 .works-list .works-list-item {
@@ -314,6 +393,12 @@ ul {
     margin-bottom: 30px;
     border: 1px solid var(--smth-grey);
 }
+
+.div-wl {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .buttons-ptf:hover,
 .buttons-ptf:focus {
     background-color: var(--accent-text-colour);
@@ -324,4 +409,5 @@ ul {
 
 .colour-type-of-work {
     column-rule-color: var(--light-grey-colour);
+    margin: 0;
 }
