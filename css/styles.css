@@ -37,21 +37,22 @@ img {
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-text-colour);
+    margin-right: 93px;
     display: block;
     display: flex;
+
 
 }
 
 .logo-two {
     color: var(--black-colour);
-    margin-right: 93px;
     display: flex;
     
 }
 
 .logo-three {
     color: var(--background-colour);
-    margin-bottom: 20;
+    margin-bottom: 20px;
 }
 
 .hero {
@@ -98,6 +99,7 @@ img {
 }
 
 ul {
+    margin: 0;
     list-style: none;
 }
 
@@ -185,7 +187,7 @@ ul {
     font-size: 14px;
     line-height: 1.7;
     color: var(--light-grey-colour);
-    text-align: center;
+    margin: 0;
 }
 
 .p-textns {
@@ -194,7 +196,7 @@ ul {
     line-height: 1.7;
     color: var(--light-grey-colour);
     text-align: center; 
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .section-osobennosti {
@@ -225,6 +227,10 @@ ul {
 
 .ot-list .team-item {
     margin-right: 30px;
+}
+
+.team-item :last-child {
+    margin-right: 0;
 }
 
 
@@ -265,6 +271,10 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+}
+
+.hero-container {
+    width: 696px;
 }
 
 .nav-redact {
@@ -329,7 +339,7 @@ ul {
 
 }
 
-.footer-list .where .email {
+.li-fl {
     margin-bottom: 9px;
 }
 
@@ -389,14 +399,23 @@ ul {
 }
 
 .works-list .works-list-item {
+    width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid var(--smth-grey);
+
 }
 
 .div-wl {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid var(--smth-grey);
+}
+
+.h2-div-wl {
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding-left: 14px;
+    text-align: start;
 }
 
 .buttons-ptf:hover,
@@ -410,4 +429,6 @@ ul {
 .colour-type-of-work {
     column-rule-color: var(--light-grey-colour);
     margin: 0;
+    text-align: start;
+    padding-left: 14px;
 }
